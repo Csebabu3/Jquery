@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<style>
+   .traverse * {
+    border: 2px solid black;
+    display: block;
+    padding: 5px;
+    margin: 15px;
+    color: lightblue;
+   }
+</style>
+<body class="sibling" style="width: 500px;">
+    <!-- <div class="logical">
+        <div style="width: 500px;">great grandparent
+            <ul>granpa
+                <li>parent
+                    <span>child</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("span").parentsUntil("div").css({"color":"red","border":"2px solid red"});
+        })
+    </script>
+     -->
+     <!-- <div class="traverse" style="width: 500px;">
+        <p class="first">child
+            <span>grandchild</span>
+        </p>
+        <p class="second">child
+            <span>grandchild</span>
+        </p>
+     </div>
+     <script>
+        $(document).ready(function(){
+            $("div").find("*").css({"color":"red","border":"2px solid red"});
+        })
+     </script> -->
+
+     <!-- <div>
+        <p>p</p>
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <p>p</p>
+     </div>
+     <script>
+        $(document).ready(function(){
+            $("h1").nextUntil("p").css({"color":"red","border":"2px solid red"});
+        })
+     </script> -->
+
+     <div style="border: 1px solid black;">
+        <p class="p">this is a paragraph</p>
+        <p class="p1">we are using filtering methods in js</p>
+    </div><br>
+    <div style="border: 1px solid black;">
+        <p class="p">this is a paragraph</p>
+        <p class="p1">we are using filtering methods in js</p>
+    </div><br>
+    <div style="border: 1px solid black;">
+        <p>this is a paragraph</p>
+        <p>we are using filtering methods in js</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("p").not(".p,.p1").css({"background-color":"red"});
+        })
+    </script>
+
+
+</body>
+</html>

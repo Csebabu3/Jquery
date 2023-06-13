@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="jqform.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <div class="input_container">
+        <form name="formvalidation" id="formvalidation" action="valid.html">
+             <div class="input-row">
+                <input type="text" name="name" placeholder="name*" required>
+            </div>
+             <div class="input-row">
+                <input type="email" name="email" placeholder="Email*" required>
+             </div>
+             <div class="input-row">
+                <input type="text" name="phone" placeholder="phone*" required>
+             </div>
+             <div class="input-row">
+                <input type="text" name="subject" placeholder="subject*" required>
+             </div>
+             <div class="input-row">
+                <textarea placeholder="message*" name="formMessage" required></textarea>
+             </div>
+             <select class="select" name="department" required>
+               <option value="-1">--- select department ---</option>
+               <option>CSE</option>
+               <option>ECE</option>
+               <option>CIVIL</option>
+               <option>EEE</option>
+               <option>MECH</option>
+               <option>BIO TECH</option>
+           </select>
+             <div class="input-center">
+                <input type="submit" value="submit">
+             </div>
+             
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="jqform.js"></script>
+</body>
+
+</html>

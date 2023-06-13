@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<style>
+    /* .blue{
+        color: blue;
+        font-size: 20px;
+    }
+    .text{
+        color: red;
+        font-size: 30px;
+    } */
+    /* .blue{
+        color: green;
+        font-size: 30px;
+    } */
+
+    #div1{
+        width: 300px;
+        height: 100px;
+        background-color: lightblue;
+        border: 1px solid black;
+
+    }
+
+</style>
+<body>
+    <p>this is a paragraph</p>
+    <p>we are using addclass methods in jquery</p>
+    <h1>this is a heading</h1>
+    <div>this is using divide the content</div>
+    <button>click the button to addclass</button>
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p,h1").addClass("blue")
+                $("div").addClass("text")
+            })
+        })
+    </script>' -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").removeClass("methods");
+            });
+        })
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p,h1,div").toggleClass("blue");
+            })
+        })
+
+    </script> -->
+
+    <!-- <h1>this is a heading</h1>
+    <p style="background-color: red;"></p>
+    <p style="background-color: green;"></p>
+    <p style="background-color: blue;"></p>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                // alert("background-color = " +$("p").css("background-color"));
+                $("p").css({"background-color":"yellow","font-size":"200%"});
+            })
+        })
+    </script> -->
+    <!-- <h1>jquery Dimention</h1>
+    <div id="div1"></div>
+    <button>click here</button>
+    <p>assign the width</p>
+    <p>assign the height</p>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var text = "";
+                text +="width of div:"+$("#div1").width()+"</br>"
+                text +="height of div:"+$("#div1").height()+"</br>";
+                text +="outer width of div:"+$("#div1").outerWidth(true)+"</br>"
+                text +="outer height of div:"+$("#div1").outerHeight(true);
+                $("#div1").html(text);
+            })
+        })
+    </script> -->
+    <button>click</button>
+    <!-- <script>
+       $(document).ready(function(){
+        $("button").click(function(){
+            var txt = "";
+            txt +="document width/height:"+$(document).width();
+            txt +="x" +$(document).height()+"</br>" 
+            txt +="window width/height:" +$(window).width();
+            txt +="x" +$(window).height();
+            alert(Text);
+        })
+       })
+    </script> -->
+    <div id="div1"></div>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").width(500).height(500)
+            })
+        })
+    </script>
+    
+</body>
+</html>

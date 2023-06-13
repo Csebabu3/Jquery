@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<style>
+    #drop{
+        text-align: center;
+        border: 1px solid black;
+        background-color: green;
+        padding: 5px;
+        cursor: pointer;
+    }
+    #down{
+      
+        padding: 50px;
+        text-align: center;
+        border: 1px solid black;
+        background-color: brown;
+    }
+</style>
+<body>
+    <p>this is a paragraph</p>
+    <p>w are goes to learn jquery</p>
+    <p>this is easy to learn</p>
+    <button>hide</button>
+    <div id="drop">click here show the content</div>
+    <div id="down">content will show here</div>
+    <!-- <div id="div1" style="width: 80px;height: 100px;background-color: red;"></div><br>
+    <div id="div2" style="width: 80px;height: 100px;background-color: green;"></div><br>
+    <div id="div3" style="width: 80px;height: 100px;background-color: blue;"></div><br> -->
+    <!-- <button id="show">show</button>
+    -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).hide();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p:first").hide();
+            });
+        });
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("p").dblclick(function(){
+                $(this).hide();
+            })
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("p").mouseenter(function(){
+            alert("this a paragraph");
+            })
+        })
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("p").mouseleave(function(){
+                alert("this is a paragraph");
+            })
+        })
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("p").mouseup(function(){
+                alert("this a paragraph");
+            })
+        })
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("p").hover(function(){
+                alert("this a paragraph");
+            },
+            function(){
+                alert("this ssdjdjhdjsdhj");
+            });
+            });
+
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("input").focus(function(){
+                $(this).css("backgroung-color","yellow");
+            });
+            $("input").blur(function(){
+                $(this).css("background-color","green");
+            });
+        })
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide(2000);
+            });
+            $("#show").click(function(){
+                $("p").show(2000);
+            });
+        });
+
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").hide(2000);
+            });
+        });
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").toggle();
+            })
+        })
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").fadeOut();
+                $("#div2").fadeOut("slow");
+                $("#div3").fadeOut("5000");
+            });
+        });
+
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").fadeToggle();
+                $("#div2").fadeToggle("slow");
+                $("#div3").fadeToggle("5000");
+            });
+        });
+
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").fadeTo("slow",0.15);
+                $("#div2").fadeTo("slow",0.5);
+                $("#div3").fadeTo("slow",0.7);
+            });
+        });
+
+    </script> -->
+    <script>
+        $(document).ready(function(){
+            $("#drop").click(function(){
+                $("#down").slideToggle("slow");
+            });
+        })
+    </script>
+</body>
+</html>

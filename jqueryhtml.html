@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<style>
+    #test{
+        color: red;
+    }
+    #demo{
+        color: green;
+    }
+</style>
+<body>
+    <!-- <p id="p1">this is a text paragraph</p>
+    <p id="p2">this is a html paraggraphh</p>
+    <p>it's value:<input type="text" id="p3"></p>
+    <button id="btn1">set text</buton>
+    <button id="btn2">set html</button>
+    <button id="btn3">set value</button>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#p1").text("hello world");
+            })
+            $("#btn2").click(function(){
+                $("#p2").html("<b>helloworld</b>");
+            })
+            $("#btn3").click(function(){
+                $("#p3").val("hello world");
+            })
+        })
+    </script> -->
+
+    <!-- <p><a href="https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_attr_set" id="w3">w3 school</a></p>
+    <button>change the mouse hover</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#w3").attr("href","https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_attr_set");
+            })
+        })
+    </script> -->
+    <!-- <p>this is a apeend paragraph</p>
+    <p>this is a appeend paragraph</p>
+    <ol>
+        <li>cofeee</li>
+        <li>milk</li>
+        <li>cookies</li>
+    </ol>
+    <button id="btn1">apped add</button>
+    <button id="btn2">append list</button>
+    <script>
+        $(document).ready(function(){
+            $(btn1).click(function(){
+                $("p").prepend("<b>in html</b>")
+            })
+            $(btn2).click(function(){
+                $("ol").prepend("<li>bhadham</li>")
+            })
+        })
+    </script> -->
+    <!-- <img src="https://www.adorama.com/alc/wp-content/uploads/2021/05/bird-wings-flying-feature.gif">
+    <br>
+    <button id="btn1">click before</button>
+    <button id="btn2">click after</button>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("img").before("<b>Before</b>")
+            })
+            $("#btn2").click(function(){
+                $("img").after("<i>After</i>")
+            })
+        })
+    </script> -->
+    
+        <p id="test">this is pargraph to remove the element</p>
+        <p id="test">this is paragraph to remove the item</p>
+        <p id="demo">this is paragraph to remove the item</p>
+
+    <button>click to remove</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").remove("#test,#demo");
+            })
+        })
+    </script>
+</body>
+</html>

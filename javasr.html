@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="password">Password:</label>
+<input type="password" id="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and be at least 8 or more characters"><br>
+
+    <script>
+        // Get the password input and the audio element
+const passwordInput = document.getElementById('password');
+const audioElement = document.getElementById('audio-feedback');
+
+// Add an event listener to the password input
+passwordInput.addEventListener('input', function() {
+  // Get the password value
+  const password = passwordInput.value;
+
+  // Check if the password meets the requirements
+  const passwordIsValid = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/.test(password);
+
+  // If the password is valid, play a success sound and give a success message
+  if (passwordIsValid) {
+    audioElement.src = 'success.mp3';
+    audioElement.play();
+    passwordInput.setCustomValidity('');
+  } else {
+    // If the password is invalid, play an error sound and give an error message
+    audioElement.src = 'error.mp3';
+    audioElement.play();
+    passwordInput.setCustomValidity('Password must contain at least one number and one uppercase and lowercase letter, and be at least 8 or more characters');
+  }
+
+  // Update the validation message
+  passwordInput.reportValidity();
+});
+
+    </script>
+</body>
+</html>

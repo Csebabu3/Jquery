@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form validation</title>
+  <link rel="stylesheet" href="s1.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <form id="myForm">
+      <h1>Create Account</h1>
+      <div class="form-control">
+        <label for="name">Name :</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" />
+        <small class="error-message"></small>
+        
+      </div>
+      <div class="form-control">
+        <label for="fname">Father's Name :</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter your Father's name" />
+        <small class="error-message"></small>
+      </div>
+      <div class="form-control">
+        <label for="dob">D-O-B :</label>
+        <input type="date" id="dob" name="dob" placeholder="Enter your Father's name" />
+        <small class="error-message"></small>
+      </div>
+      <!-- <div class="form-control">
+                <label for="mobile">Mobile no :</label>
+                <input type="mobile" id="mobile" name="mobile" placeholder="Enter your mobile" />
+                <small class="error-message"></small>
+              </div> -->
+
+      <div class="form-control">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" />
+        <small class="error-message"></small>
+      </div>
+
+
+      <div class="form-control">
+        <label for="password">Password :</label>
+        <input type="password" id="password" name="password" placeholder="Enter a password" />
+        <small class="error-message"></small>
+      </div>
+
+      <div class="form-control">
+        <label for="confirm-password">Confirm Password :</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" />
+        <small class="error-message"></small>
+      </div>
+      <div class="form-control">
+        <label for="confirm-password">Address :</label>
+        <textarea id="Address"></textarea>
+        <small class="error-message"></small>
+      </div>
+      <div class="form-control">
+        <label for="confirm-password">pincode :</label>
+        <input type="text" id="pincode" placeholder="Enter pincode">
+        <small class="error-message"></small>
+      </div>
+      <div class="form-control">
+        <label for="txtStudentPhoneNumber">Phone Number:</label>
+        <input type="number" value="" placeholder="enter your phone number" id="txtStudentPhoneNumber" name="txtStudentPhoneNumber">
+        <span id="spnIsStudentPhoneNumberValid"></span>
+      </div>
+
+    <label>Gender :</label><br><br>
+    <input type="radio" value="male" id="rdbMale" name="rdbstudentgender">
+    <label>male</label>
+    <input type="radio" value="female" id="rdbFemale" name="rdbstudentgender">
+    <label>female</label>
+    <span id="spnIsStudentGenderValid"></span><br><br>
+
+    <label>Qualification :</label><br>
+    <select id="slctStudentQualification" name="slctStudentQualification">
+        <option value="-1">-- select --</option>
+        <option value="cse">-- cse --</option>
+        <option value="ece">-- ece --</option>
+        <option value="civil">-- civil --</option>
+        <option value="mech">-- mech --</option>
+        <option value="eee">-- eee --</option>
+    </select><br>
+    <span id="spnIsStudentQualificationValid"></span><br>
+
+    <label>Languages :</label><br><br>
+    <input type="checkbox" value="Tamil" id="Tamil" name="Languages">
+    <label>Tamil</label>
+    <input type="checkbox" value="English" id="English" name="Languages">
+    <label>English</label><br>
+    <span id="spnIsStudentLanguagesValid"></span><br>
+
+      <button type="submit">Submit</button>
+      <button type="reset" onreset="resetform()">Reset</button>
+  </form>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<script src="s3.js"></script>
+</body>
+
+
+</html>

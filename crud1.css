@@ -1,0 +1,131 @@
+/* form{
+    margin-left: 450px;
+}
+form label{
+    font-weight: bold;
+}
+h2{
+    color: brown;
+    font-size: 35px;
+    font-weight: bolder;
+}
+form .students input{
+    width: 36%;
+    outline: none;
+    border: 1px solid gray;
+    font-weight: bolder;
+    margin-top: 7px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 6px;
+    
+}
+form .students select{
+    width: 37%;
+    font-weight: bolder;
+    margin-top: 7px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+ button{
+    outline: none;
+    border: 1px solid gray;
+    background-color: green;
+    color: white;
+   padding: 8px 135px;
+   cursor: pointer;
+   margin-top: 10px;
+   font-size: 17px;
+   font-weight: bold;
+ }
+
+
+small{
+    color: red;
+    font-weight: bolder;
+    font-size: 17px;
+} */
+body {
+    font-family: Arial;
+    font-size: 16px;
+    margin: 0;
+    background: rgba(108, 165, 42, 0.651);
+    color: white;
+    /* display: flex; */
+    justify-content: space-around;
+    min-height: 100vh;
+    align-items: center;
+  }
+  .student-form{
+    width: 600px;
+    background-color: lightgrey;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    border: 20px solid rgb(0, 255, 85);
+    margin-left: 350px;
+
+  }
+  .student-form .validation{
+    margin-bottom: 12px;
+    
+  }
+  .students label{
+    color: black;
+    font-weight: bold;
+  }
+  .student-form input:not([type="submit"]),
+  .student-form textarea,select{
+    width: 94%;
+    margin: 0 0 3px;
+    /* background-color: white; */
+    padding: 0 15px;
+    height: 50px;
+    line-height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: 0;
+    transition: all 0.5s ease-out;
+    color: gray;
+    margin-top: 10px;
+  }
+  .student-form h2{
+    text-align: center;
+    color: rgba(50, 139, 57, 0.856);
+    margin-top: 15px;
+    font-size: 30px;
+}
+.student-form textarea{
+    resize: none;
+    height: 100px;
+   
+}
+*::-webkit-input-placeholder {
+    opacity: 1;
+    color: gray;
+   
+  }
+  .student-form button {
+    padding: 10px 30px;
+    font-size: 18px;
+    line-height: 30px;
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: green;
+    color: #fff;
+    border: 0;
+    transition: all 0.5s ease-out;
+    border-radius: 5px;
+  }
+  .student-form input[type="submit"]:hover {
+    background-color: rgba(125, 18, 158, 0.63);
+  }
+  small{
+    color: red;
+    font-weight: bolder;
+    font-size: 17px;
+}

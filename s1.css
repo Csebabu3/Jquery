@@ -1,0 +1,98 @@
+body{
+    background: linear-gradient(to right,#abcfab,#caefca,#2c532c);
+    font-family: arial;
+}
+form{
+    width: 350px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+form h1{
+    color: #0f2027;
+    text-align: center;
+}
+form button{
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: black;
+    background-color: gray;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.form-control input{
+    border: 2px solid #fefefe;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    padding: 6px;
+    width: 100%;
+    outline: none;
+    margin-top: 8px;
+    box-shadow: inset 2px 2px 15px black;
+    padding-bottom: 10px;
+   
+}
+.form-control label{
+    color: black;
+}
+.form-control.success input{
+    border-color: green;
+}
+.form-control.error input{
+    border-color: red;
+}
+.form-control.error{
+    color: red;
+    font-size: 14px;
+    padding: 5px;
+}
+.form-control.success textarea{
+    border-color: green;
+}
+
+.form-control.error textarea{
+    border-color: red;
+}
+  select{
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+    border: none;
+    padding: 5px;
+    margin-top: 8px;
+    box-shadow: inset 2px 2px 15px black;
+}
+textarea{
+outline: none;
+box-shadow: inset 2px 2px 15px black;
+font-size: 20px;
+}
+#spnIsStudentQualificationValid{
+    font-size: 12px;
+}
+#spnIsStudentGenderValid{
+    font-size: 12px;
+}
+#spnIsStudentlanguagesValid{
+    font-size: 12px;
+}
+#spnIsStudentLanguagesValid{
+    font-size: 12px;
+}
+#spnIsStudentPhoneNumberValid{
+    font-size: 12px;
+}

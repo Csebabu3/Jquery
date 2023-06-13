@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<!-- <style>
+    #slid{
+        padding: 8px;
+        text-align: center;
+        background-color: red;
+        border: 1px solid black;
+        cursor: pointer;
+       
+    }
+    #down{
+        padding: 50px;
+        text-align: center;
+        background-color: blue;
+        border: 1px solid yellow;
+        display: none;
+        height: 500px;
+    }
+</style> -->
+<body>
+    <button>show value</button>
+    <p><a href="https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_attr_get" id="w3">w3school.com</a></p>
+    <!-- <p>Name:<input type="text" id="test"></p> -->
+    <!-- <button id="btn2">show html</button> -->
+    <!-- <p id="p1">this is a <b>paragraph</b></p> -->
+    
+    <!-- <div id="slid">click the button</div>
+    <div id="down">slid down the button</div> -->
+    <!-- <div style="width: 200px;height: 200px;background: red;position: absolute;">Hello world</div> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                // $("div").animate({left:'250px',opacity:"0.5",width:"+=150px",height:"+=150px"});
+                $("div").animate({height:"toggle"});
+            });
+        });
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var div = $("div");
+                div.animate({height:"300px",opacity:"0.4",},"slow");
+                div.animate({width:"300px",opacity:"0.4",},"slow");
+                div.animate({height:"100px",opacity:"0.4",},"slow");
+                div.animate({width:"100px",opacity:"0.4",},"slow");
+            })
+        })
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var div = $("div");
+                div.animate({left:"100px"},"slow")
+                div.animate({fontSize:"3em"},"slow")
+            })
+        })
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("#slid").click(function(){
+                $("#down").slideDown(3000);
+            })
+            $("#stop").click(function(){
+                $("#down").stop();
+            })
+        })
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").hide("slow",function(){
+                    alert("successfully hide paragraph");
+                })
+            })
+        })
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").hide(3000);
+                alert("successfully hide this")
+
+                
+            })
+        })
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#p1").css("color","red").slideUp(2000).slideDown(2000);
+            })
+        })
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                alert("Text:"+$("#p1").text());
+            })
+            $("#btn2").click(function(){
+                alert("Text:"+$("#p1").html());
+            })
+        })
+    </script> -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                alert("value:"+$("#test").val());
+            });
+        });
+    </script> -->
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                alert($("#w3").attr("href"));
+            })
+        })
+    </script>
+
+</body>
+</html>
